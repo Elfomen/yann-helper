@@ -1,0 +1,20 @@
+{
+  "name": "yann-helper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "back-end/server.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon back-end/server.js",
+    "client": "npm start --prefix front-end",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "yann-devs",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "concurrently": "^6.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.10"
+  }
+}
